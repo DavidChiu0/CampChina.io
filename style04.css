@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	background: #ECEAEA;
+font-family: 'Lobster', cursive;
+  font-weight: 400;
+  background-image:
+  background-repeat: no-repeat;
+  background-size: 100%
+}
+
+
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+
+.container {
+	width: 90%;
+	margin: 5px auto;
+
+ }
+header {
+  background: clear;
+
+}.menu a {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: red;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: center;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+	display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 100px;
+  padding-top: 20px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+	font-weight: bold;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: red;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+nav a:hover::before {
+  width: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+
+
+}
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 0px;
+}
+
+	.fa-snapchat-ghost {
+	  background: #fffc00;
+	  color: white;
+	  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
